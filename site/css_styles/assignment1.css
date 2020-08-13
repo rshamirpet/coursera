@@ -1,0 +1,82 @@
+body{
+	width:100%;
+	margin-left:20px;
+	margin-right:20px;
+	font-family:times new roman,arial,sans-serif;
+}
+h1{
+	width:100%;
+	text-align: center;
+	font-size:180%;
+	padding-bottom:0;
+}
+.socialmedia section{
+	width:33.33%;
+	float:left;
+	margin-right:0;
+}
+section p{
+	position:relative;
+	width:auto;
+	height:190px;
+	color: black;
+	background-color: #aeb0ab;
+	border:3px solid black;
+	padding-top:40px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right: 20px;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+#title{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:3px 25px;
+	font-size:125%;
+	border-left: 2px solid black;
+	border-bottom:2px solid black;
+	display:inline;
+}
+.twitter #title{
+	font-weight:bold;
+	background-color: #e09999;
+}
+.facebook #title{
+	font-weight: bold;
+	color: white;
+	background-color: #b33737;
+}
+.instagram #title{
+	font-weight: bold;
+	background-color: #f7e697;
+}
+
+@media screen and (max-width:991px){
+	.socialmedia section{
+		width:50%;
+		float:left;
+		margin-right:0;
+	}
+	.socialmedia section.instagram{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:767px){
+	.socialmedia section{
+		width:100%;
+	}
+}
+
+.group:before,.group:after{
+	content:"";
+	display:table;
+}
+.group:after{
+	clear:both;
+}
+.group{
+	zoom:1;
+}
